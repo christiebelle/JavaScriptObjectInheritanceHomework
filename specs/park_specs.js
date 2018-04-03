@@ -30,9 +30,9 @@ describe ('Park', function(){
     park.addDino(dino1);
     park.addDino(dino2);
     park.addDino(dino4);
-    park.removeDino();
+    park.removeDino("Velociraptor");
     assert.strictEqual(park.enclosures.length, 1);
-    assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
+    assert.deepStrictEqual(park.enclosures, [dino4]);
   });
 
 });

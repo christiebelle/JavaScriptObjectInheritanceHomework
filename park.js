@@ -2,9 +2,20 @@ var Park = function(){
   this.enclosures = [];
 };
 
-Park.prototype.addDino = function (Dinosaur) {
+Park.prototype.addDino = function (Dinosaur){
   this.enclosures.push(Dinosaur);
 };
+
+Park.prototype.removeDino = function (type){
+  var dinotype = type;
+  for(dino of enclosures){
+    if(dino.type === dinotype){
+    var dinoIndex = this.enclosures.indexOf(dino);
+    this.enclosures.splice(dinoIndex);
+  };
+};
+
+
 
 module.exports = Park;
 // Use TDD to write and make pass the following tests:
