@@ -15,11 +15,6 @@ module.exports = Dinosaur;
 //
 // Use TDD to write and make pass the following tests:
 //
-// Dinosaur:
-//
-// should have a type
-// should have a number of offspring per year
-//
 // Park:
 //
 // enclosure should start empty
