@@ -22,7 +22,7 @@ describe ('Park', function(){
   it('enclosure should be able to add dinosaurs', function(){
     park.addDino(dino1);
     park.addDino(dino4);
-    assert.strictEqual(park.enclosures.length, 0);
+    assert.strictEqual(park.enclosures.length, 2);
     assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
   });
 
