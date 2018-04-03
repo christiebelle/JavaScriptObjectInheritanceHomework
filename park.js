@@ -17,6 +17,11 @@ Park.prototype.addDino = function (Dinosaur){
 //   };
 // };
 
+Park.prototype.filterDinos = function () {
+  var filteredDinos =  this.enclosures.filter(dino => dino.offspring > 2);
+  return filteredDinos;
+};
+
 module.exports = Park;
 // Use TDD to write and make pass the following tests:
 //

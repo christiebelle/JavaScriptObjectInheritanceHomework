@@ -40,8 +40,8 @@ describe ('Park', function(){
     park.addDino(dino2);
     park.addDino(dino3);
     park.addDino(dino4);
-    assert.strictEqual(park.enclosures.length, 4);
-    assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
+    assert.strictEqual(park.filteredDinos.length, 3);
+    assert.deepStrictEqual(park.filterDinos, [dino1, ,dino3, dino4]);
   });
 
 });
