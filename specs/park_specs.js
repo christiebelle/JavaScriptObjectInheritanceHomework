@@ -34,7 +34,7 @@ describe ('Park', function(){
     assert.strictEqual(park.enclosures.length, 1);
     assert.deepStrictEqual(park.enclosures, [dino4]);
   });
-
+  
 });
 
 

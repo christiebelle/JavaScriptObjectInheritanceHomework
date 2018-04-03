@@ -6,7 +6,7 @@ Park.prototype.addDino = function (Dinosaur){
   this.enclosures.push(Dinosaur);
 };
 
-Park.prototype.removeDino = function (type){
+Park.prototype.removeDino = function(type){
   var dinotype = type;
   for(dino of enclosures){
     if(dino.type === dinotype){
@@ -14,8 +14,6 @@ Park.prototype.removeDino = function (type){
     this.enclosures.splice(dinoIndex);
   };
 };
-
-
 
 module.exports = Park;
 // Use TDD to write and make pass the following tests:
