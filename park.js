@@ -2,7 +2,9 @@ var Park = function(){
   this.enclosures = [];
 };
 
-
+Park.prototype.addDino = function (Dinosaur) {
+  this.enclosures.push(Dinosaur);
+};
 
 module.exports = Park;
 // Use TDD to write and make pass the following tests:

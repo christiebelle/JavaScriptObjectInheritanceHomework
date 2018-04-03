@@ -13,5 +13,25 @@ describe ('Park', function(){
     dino3 = new Dinosaur("Diggle", "T-Rex", 4);
     dino4 = new Dinosaur("Cisco", "Triceratops", 3);
   });
-  
+
+  it('enclosure should start empty', function(){
+    assert.strictEqual(park.enclosures.length, 0);
+    assert.deepStrictEqual(park.enclosures, []);
+  });
+
+  it('enclosure should be able to add dinosaurs', function(){
+    park.addDino(dino1);
+    park.addDino(dino4);
+    assert.strictEqual(park.enclosures.length, 0);
+    assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
+  });
+
 });
+
+
+// Park:
+//
+// enclosure should start empty
+// should be able to add dinosaur
+// should be able to remove all dinosaurs of a particular type
+// should get all the dinosaurs with an offspring count of more than 2
