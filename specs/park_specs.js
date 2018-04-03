@@ -26,15 +26,24 @@ describe ('Park', function(){
     assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
   });
 
-  it('enclosure should be able to remove dinos of certain type', function(){
+  // it('enclosure should be able to remove dinos of certain type', function(){
+  //   park.addDino(dino1);
+  //   park.addDino(dino2);
+  //   park.addDino(dino4);
+  //   park.removeDino("Velociraptor");
+  //   assert.strictEqual(park.enclosures.length, 1);
+  //   assert.deepStrictEqual(park.enclosures, [dino4]);
+  // });
+
+  it('should be able to return all dinos with offspring count of more than 2', function(){
     park.addDino(dino1);
     park.addDino(dino2);
+    park.addDino(dino3);
     park.addDino(dino4);
-    park.removeDino("Velociraptor");
-    assert.strictEqual(park.enclosures.length, 1);
-    assert.deepStrictEqual(park.enclosures, [dino4]);
+    assert.strictEqual(park.enclosures.length, 4);
+    assert.deepStrictEqual(park.enclosures, [dino1, dino4]);
   });
-  
+
 });
 
 
